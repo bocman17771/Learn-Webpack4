@@ -1,0 +1,52 @@
+presset это набор плагинов
+npm install -D webpack webpack-cli
+
+start   npx webpack --config webpack.config.js
+
+plugins
+Для html
+npm install -D html-webpack-plugin
+
+для очистки папки dist
+npm install -D clean-webpack-plugin
+
+лоадер для стилей 
+npm i -D style-loader css-loader
+
+лоадер позволяет работать с различными файлами, например как с картинкой
+npm i -D file-loader
+
+лоадер нормалайз нормализует стили под различные браузеры (тут не указываем -D так как настройка нужна для всего нашего приложения , в продакшене аналогично)
+npm install normalize.css
+
+для .xml
+npm i -D xml-loader
+
+
+
+Библиотека 
+-S как заивисимость для нашего приложения
+npm i -S jquery
+
+---webpack server
+Для автоматизации, типо watch, только автоматом обновляет еще страницу в браузере
+npm i -D webpack-dev-server
+
+copy-webpack-plugin служит для копирование статических файлов в дист и прочее
+npm i copy-webpack-plugin
+
+MiniCssExtractPlugin
+
+TerserWebpackPlugin оптимизирует js
+npm install terser-webpack-plugin --save-dev
+
+sass
+npm i -D node-sass sass-loader
+
+ESlint
+npm i -D eslint-loader
+npm i -D eslint
+npm i -D babel-eslint для совместной работы с бейбел
+
+анализатор сборки
+npm i webpack-bundle-analyzer 
